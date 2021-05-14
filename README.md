@@ -43,6 +43,10 @@
   >
   > `highWaterMark` is a threshold, not a limit:  usually streams don't throw error, but stops asking for more data on buffer overflow.
 
+- ##### `PassThrough`
+
+  > A trivial implementation of transform.
+
 
 
 ### **Types of streams**
