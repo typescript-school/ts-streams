@@ -2,4 +2,5 @@
 
 // import './FileStream';
 // import './HttpFileStreams';
-import './HttpStreamsProxy';
+// import './HttpStreamsProxy';
+import './HttpStreamsFileServer';

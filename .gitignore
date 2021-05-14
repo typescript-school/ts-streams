@@ -2,3 +2,4 @@ node_modules
 *.DS_Store
 .idea
 src/sample-files/file2.txt
+src/sample-files/recorder
