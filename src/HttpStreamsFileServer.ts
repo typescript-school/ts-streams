@@ -6,8 +6,9 @@ const base = path.join(__dirname, 'sample-files/website');
 
 const resolveFile = (uri: string) => {
     const extension = path.extname(uri);
-    if(extension) {
-        return uri;
+    if(path.extname(uri)) {
+        const file = path.join(base, uri);
+        return fs.existsSync(file) ? file : null ;
     }
 
     const htmlFile = path.join(base, uri + '.html');
@@ -19,7 +20,7 @@ const resolveFile = (uri: string) => {
 };
 
 const server = http.createServer((request, response) => {
-    const file = resolveFile(request.url!);
+    const file = resolveFile(decodeURI(request.url!));
     if(request.method === 'GET' && file){
         fs.createReadStream(file).pipe(response);
         return;
