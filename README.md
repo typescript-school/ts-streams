@@ -100,10 +100,15 @@
 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rQXaDH__Suk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 ### Todo 
 
 - Play with readable : 
-  - [ ] Use file for http response stream
+  - [x] Use file for http response stream
+  - [ ] https://www.youtube.com/watch?v=rQXaDH__Suk
   - [ ] Use file for process.out stream
   - [ ] Use transform stream to convert to reverse lines in a text file
   - [ ] Use `objetMode` stream with transformt to read json files, modify field values and save to other file
@@ -123,3 +128,11 @@ Refer:
 - https://nodejs.org/api/stream.html#stream_stream
 - https://nodejs.dev/learn/nodejs-streams
 - https://nodesource.com/blog/understanding-streams-in-nodejs/
+
+
+
+<Component>
+
+​	<Child = ""/>
+
+</Component>
