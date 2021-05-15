@@ -2,5 +2,7 @@ node_modules
 *.DS_Store
 .idea
 src/sample-files/file2.txt
+src/sample-files/file3.txt
 src/sample-files/recorder
 src/sample-files/website
+src/sample-files/ignored
