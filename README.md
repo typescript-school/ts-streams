@@ -51,10 +51,10 @@
 
 ### **Types of streams**
 
-- **Readable**  : read only stream
-- **Writable**   : write only stream
-- **Duplex**      :  read/write stream
-- **Transform** : modifies data that is read/written to it.
+- **Readable**  : read only stream, can pipe from it, not into it
+- **Writable**   : write only stream, can pipe into it, not from it
+- **Duplex**      :  read/write stream, can pipe into it, and from it
+- **Transform** : modifies data that is read/written to it, can pipe into it, and from it but with transformed data.
 
 
 

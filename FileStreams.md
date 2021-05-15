@@ -26,4 +26,11 @@ readFileStream.on('close', () => writeFileStream.close())
 
 
 
+Copy to multiple files at once
+
+```
+```
+
+
+
 refer : [src/FileStream.ts](src/FileStream.ts)

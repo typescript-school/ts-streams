@@ -3,3 +3,4 @@ node_modules
 .idea
 src/sample-files/file2.txt
 src/sample-files/recorder
+src/sample-files/website
