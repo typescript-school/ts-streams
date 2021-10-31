@@ -1,3 +1,9 @@
+- **[Buffers](./Buffers.md)**
+
+  > Buffer is how you handle pure binary data in NodeJS.
+
+  
+
 # Streams 
 
 - **Composiblity**

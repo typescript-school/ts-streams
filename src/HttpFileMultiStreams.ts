@@ -6,8 +6,13 @@ const readFileStream     = fs.createReadStream(readFilePath);
 
 // stream 10000 times
 readFileStream.setMaxListeners(10005);
+const streams = [];
+
 for(let i =0; i < 10000; i ++){
     const filePath = path.join(__dirname, `./sample-files/ignored/file-${i}.txt`)
-    const outStream = fs.createWriteStream(filePath);
-    readFileStream.pipe(outStream);
+    streams.push(fs.createWriteStream(filePath))
+}
+
+for(let i =0; i < streams.length; i ++){
+    readFileStream.pipe(streams[i]);
 }
