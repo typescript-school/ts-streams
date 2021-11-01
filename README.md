@@ -2,12 +2,15 @@
 
   > Buffer is how you handle pure binary data in NodeJS.
 
-  
+- ***[File Stream API](./FileStreamApi.md)***
+
+  > How to create read and write streams from a file
+
+- [*Create Read Stream*](./CreateReadStream.md)
 
 # Streams 
 
-- **Composiblity**
-  - Makes it much easier to compose a system
+- **Composiblity**: Makes it much easier to compose a system
 
 - Best way to model a system that works on continuous data being generated and consumed.
 - interact with each other using `pipe`
@@ -112,6 +115,24 @@
 
 ### Todo 
 
+
+
+- [ ] Creating custom streams
+
+- [ ] How Streams use events ? 
+
+  > Check sample implementation in NodeJS.
+
+- [ ] How `fs.createReadStream` works ? 
+
+  > When does it start reading file ? 
+  >
+  > What if two pipes are made ? 
+
+- [ ] Create a custom stream to count bytes piped in 
+
+  
+
 - Play with readable : 
   - [x] Use file for http response stream
   - [ ] https://www.youtube.com/watch?v=rQXaDH__Suk
@@ -131,8 +152,8 @@
 
 Refer: 
 
-- https://nodejs.org/api/stream.html#stream_stream
-- https://nodejs.dev/learn/nodejs-streams
+- Simple overview : https://nodejs.dev/learn/nodejs-streams
+- Stream API : https://nodejs.org/api/stream.html#stream_stream
 - https://nodesource.com/blog/understanding-streams-in-nodejs/
 
 

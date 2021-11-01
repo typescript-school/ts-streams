@@ -11,12 +11,13 @@ Why ?
 **Buffer**
 
 - Is a `class` in NodeJs for handling raw binary data.
-
 - Acts as an `array of integers`
-
 - Uses ***integers to represent bytes*** (hence integers are `0`-` 256`(`2^8`)
-
 - On console.log, it is shown as list of hexadecimals.
+
+
+
+- Creating buffer 
 
   ```javascript
   // js-runner
